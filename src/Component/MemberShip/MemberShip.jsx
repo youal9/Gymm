@@ -1,5 +1,5 @@
 import React from 'react';
-import './Membership.css'
+import './MemberShip.css'
 import Price from "../../assets/Price"
 import { motion } from 'framer-motion'; 
 
