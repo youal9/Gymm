@@ -5,7 +5,7 @@ import About from './Component/About/About';
 import Membership from './Component/MemberShip/MemberShip';
 
 
-import Home from './Component/Home/home';
+import Home from './Component/Home/Home';
 import PersonalTrainer from './Component/PersonalTrainer/PersonalTrainer';
 import Footer from './Component/Footer/Footer';
 
