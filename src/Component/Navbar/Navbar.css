@@ -106,7 +106,7 @@ span {
 
     .nav-menu {
         position: fixed;
-        top: -100%; /* Hidden above the viewport */
+        top: -120%; /* Hidden above the viewport */
         left: 0;
         flex-direction: column;
         background-color: rgb(0, 0, 0);
