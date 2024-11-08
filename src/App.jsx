@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Navbar from './Component/Navbar/Navbar';
 import About from './Component/About/About';
-import Membership from './Component/Membership/Membership';
+import Membership from './Component/MemberShip/MemberShip';
 
 
 import Home from './Component/Home/home';
