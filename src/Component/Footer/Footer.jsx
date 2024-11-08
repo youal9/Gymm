@@ -22,7 +22,7 @@ const Footer = () => {
                 </Link>
                
                 <p className='footer-text'>
-                    Nordic Wellness – hela Sveriges träningsklubb. Alla har rätt
+                 Invasion – hela Sveriges träningsklubb. Alla har rätt
                     till ett riktigt bra gym – oavsett vem du är, 
                     var du bor eller varför du tränar.  
                 </p>
