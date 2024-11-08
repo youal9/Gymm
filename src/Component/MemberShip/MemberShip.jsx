@@ -17,7 +17,7 @@ const Membership = () => {
         <motion.div
          initial={{ y: 100, opacity: 0 }}  // Starta utanför skärmen (nedanför) och med opacity 0
          whileInView={{ y: 0, opacity: 1 }} // När den är synlig: flytta till ursprunglig position och öka opacity
-         transition={{ duration: 1.8, ease: 'easeOut', delay: 0.8 }} // Tidsinställning och easing för animationen
+         transition={{ duration: 1.8, ease: 'easeOut', delay: 0.5 }} // Tidsinställning och easing för animationen
          viewport={{ once: true }} // Kör bara animationen en gång när den kommer i sikte
         
         >
