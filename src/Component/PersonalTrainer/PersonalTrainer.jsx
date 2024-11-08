@@ -1,14 +1,29 @@
-
 import React from 'react';
 import trainer from "../../assets/trainer"
 import './PersonalTrainer.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { motion } from 'framer-motion'; 
 
 const PersonalTrainer = () => {
   return (
     <div className="team" id="PersonalTrainer">
-      <h1 className="team-title">Vårt Team</h1>
+          <motion.div 
+          initial={{ y: 100, opacity: 0 }}  // Starta utanför skärmen (nedanför) och med opacity 0
+          whileInView={{ y: 0, opacity: 1 }} // När den är synlig: flytta till ursprunglig position och öka opacity
+          transition={{ duration: 1.2, ease: 'easeOut' }} // Tidsinställning och easing för animationen
+          viewport={{ once: true }} // Kör bara animationen en gång när den kommer i sikte
+        >      
+          <h1 className="team-title">Vårt Team</h1>
+        </motion.div>
+       
+        <motion.div
+         initial={{ y: 100, opacity: 0 }}  // Starta utanför skärmen (nedanför) och med opacity 0
+         whileInView={{ y: 0, opacity: 1 }} // När den är synlig: flytta till ursprunglig position och öka opacity
+         transition={{ duration: 1.8, ease: 'easeOut', delay: 0.5 }} // Tidsinställning och easing för animationen
+         viewport={{ once: true }} // Kör bara animationen en gång när den kommer i sikte
+        
+        >
       <div className="trainer-grid">
         {trainer.map((trainer) => (
           <div key={trainer.id} className="trainer-card">
@@ -29,6 +44,7 @@ const PersonalTrainer = () => {
           </div>
         ))}
       </div>
+      </motion.div>
     </div>
   );
 };
