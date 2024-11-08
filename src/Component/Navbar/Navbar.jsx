@@ -47,7 +47,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="about" smooth={true} duration={500} offset={-100} onClick={closeMenu}>About</Link>
+            <Link to="about" smooth={true} duration={500} offset={-100} onClick={closeMenu}>Om oss</Link>
           </li>
           <li className="nav-item">
             <Link to="membership" smooth={true} duration={500} onClick={closeMenu}>Medlemskap</Link>
