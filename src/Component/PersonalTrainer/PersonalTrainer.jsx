@@ -1,3 +1,4 @@
+
 import React from 'react';
 import trainer from "../../assets/trainer"
 import './PersonalTrainer.css'
