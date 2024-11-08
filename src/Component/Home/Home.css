@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Protest+Strike&display=swap');
+.hero-wrapper {
+    width: 100%; 
+    height: 100vh;
+    
+}
+.video-section {
+    position: relative;
+    grid-column: 1 / -1; 
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+    
+}
+.video-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+   
+    
+}
+
+.video-container video{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    z-index: -1;
+    
+    
+}
+.video-container::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.819), rgba(0, 0, 0, 0.568));
+    z-index: 1;
+}
+.text-wrapper {
+    display: flex; /* Gör texten till en flexbox */
+    justify-content: center; /* Centrera texten horisontellt */
+    align-items: center; /* Centrera texten vertikalt */
+}
+.video-text {
+    position: absolute;
+    top: 50%;              
+    left: 50%;               
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2; 
+    
+}
+.home-h2{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ffffff;
+    
+    font-size: 70px;
+    white-space: nowrap;
+    
+
+     font-family: "Abril Fatface", serif;
+  font-weight: 300;
+  font-style: italic;
+
+
+}
+.fitness-span {
+    margin-left: 10px;
+}
+
+.down-arrow{
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 30px;
+    left: 48%;
+    transform: translateX(50%);
+    cursor: pointer;
+}
+
+/* seckond section */
+
+
+@media (max-width: 768px) { /* Du kan justera max-width till din önskade brytpunkt */
+    .text-wrapper h2 {
+      font-size: 1.4rem; /* Minska storleken för mobil */
+      
+    }
+   
+   
+    .text-wrapper h2 .fitness-span {
+      font-size: 1.4rem; /* Minska storleken på fitness-span */
+    }
+   
+    .down-arrow {
+        font-size: 40px; /* Minska storleken för mobil */
+        left: 50%; /* Behåll left 50% */
+        transform: translateX(-50%); /* Behåll transform för att centrera den exakt */
+    }
+  }
