@@ -1,0 +1,87 @@
+.team {
+    width: 100%;
+    min-height: 100vh; /* Ensure it fills the full viewport height */
+    display: flex;
+    flex-direction: column; /* Align content vertically */
+    justify-content: center; /* Center content vertically */
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.team-title{
+    justify-content: center;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 45px;
+}
+.trainer-grid{
+    margin-top: 4rem;
+    display: grid;
+    gap: 2rem;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 20px;
+    
+   
+}
+.trainer-card{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Horisontellt centrerad */
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.175);
+}
+.trainer-card img{
+    margin-bottom: 1rem;
+   width: 200px;
+   border-radius: 50%;
+   
+}
+.trainer-card h4{
+    font-size: 1rem;
+   text-align: center;
+   margin-bottom: 1rem; 
+}
+.trainer-card p {
+    text-align: center;
+    font-size: 1rem;
+  
+    margin-bottom: 1rem; /* Avstånd mellan rollen och ikonerna */
+}
+.trainer-social {
+    display: flex;
+    gap: 1rem; /* Avstånd mellan ikonerna */
+    justify-content: center;
+    color: black;
+}
+.trainer-social a{
+    
+    color: black;
+}
+@media (max-width: 1024px) and (min-width: 768px){
+    .trainer-grid {
+      grid-template-columns: repeat(2, 1fr); /* En kolumn på mobil */
+      
+     
+  }
+  }
+@media (max-width: 768px) {
+    .trainer-grid {
+        grid-template-columns: 1fr;
+        justify-items: center; 
+
+    }
+    .trainer-card{
+        width: 250px;
+        
+    }
+    .trainer-card img{
+        
+       width: 150px;
+       border-radius: 50%;
+       
+    }
+}
+
+
