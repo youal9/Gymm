@@ -6,6 +6,7 @@
     left: 0;
     z-index: 1;
     transition: .3s ease-in;
+    background-color: transparent;
 }
 
 .header.dark-nav {
@@ -89,6 +90,7 @@ span {
 @media screen and (max-width: 940px) {
     .header {
         max-width: 100%;
+        background-color: transparent;
     }
     .video-section{
         width: 100%;
