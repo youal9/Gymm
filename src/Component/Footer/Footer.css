@@ -1,0 +1,169 @@
+/* Grundlayout för Footer */
+.footer {
+    width: 100%;
+    background-color: rgba(10, 10, 10, 0.841);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Auto-fit för kolumner */
+    padding: 90px 20px;
+    justify-content: center;
+    gap: 3.5rem;
+    text-align: center;
+    color: white;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+.footer-h3 {
+    cursor: pointer;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+
+.footer-text {
+    color: white;
+    max-width: 400px; /* Begränsar textbredd */
+    margin: 0 auto; /* Centrerar texten */
+    padding: 10px;
+    line-height: 1.5; /* För bättre läsbarhet */
+}
+
+.footer-right li {
+    color: white;
+    margin: 8px 0;
+}
+
+.icon a {
+    margin: 0 15px;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    transition: all 0.3s ease;
+}
+
+.icon a:hover {
+    color: red;
+    transform: scale(1.5); /* Effekt för ikon vid hover */
+}
+
+.footer-bottom {
+    text-align: center;
+    grid-column: 1 / -1;
+    color: white;
+}
+
+.footer-h4 {
+    font-size: 17px;
+    color: white;
+}
+
+/* 1. För Desktop */
+@media (min-width: 1024px) {
+    .footer {
+        
+        grid-template-columns: repeat(4, 1fr); /* Fyra kolumner för större skärmar */
+    }
+
+    .footer-content {
+        padding-bottom: 20px;
+    }
+
+    .footer-h3 {
+        font-size: 35px; /* Större text för desktop */
+    }
+
+    .footer-text {
+        font-size: 16px; /* Lätt större text på desktop */
+    }
+
+    .footer-h4 {
+        font-size: 18px; /* Större rubrikstorlek */
+    }
+
+    .icon a {
+        font-size: 28px; /* Större ikoner för desktop */
+    }
+}
+
+/* 2. För Laptops (medium skärmar) */
+@media (max-width: 1024px) and (min-width: 768px) {
+    .footer {
+        grid-template-columns: repeat(2, 1fr); /* Två kolumner för laptops */
+        padding: 60px 20px;
+    }
+
+    .footer-h3 {
+        font-size: 32px; /* Lätt minskad textstorlek på laptop */
+    }
+
+    .footer-text {
+        font-size: 15px;
+    }
+
+    .footer-h4 {
+        font-size: 17px;
+    }
+
+    .icon a {
+        font-size: 26px;
+    }
+}
+
+/* 3. För Tablets och Små Enheter */
+@media (max-width: 768px) {
+    .footer {
+        grid-template-columns: 1fr; /* En kolumn för tabletter */
+        padding: 50px 20px;
+    }
+
+    .footer-h3 {
+        font-size: 28px; /* Minska textstorlek på tabletter */
+    }
+
+    .footer-text {
+        font-size: 14px; /* Minska textstorlek för bättre läsbarhet på små skärmar */
+    }
+
+    .footer-h4 {
+        font-size: 16px;
+    }
+
+    .footer-bottom p {
+        font-size: 14px; /* Minska copyright-texten */
+    }
+
+    .icon a {
+        font-size: 24px; /* Liten ikonsstorlek på tabletter */
+    }
+}
+
+/* 4. För Mobila Enheter */
+@media (max-width: 480px) {
+    .footer {
+        padding: 30px 15px;
+    }
+
+    .footer-h3 {
+        font-size: 24px; /* Minska ytterligare för små mobiler */
+    }
+
+    .footer-text {
+        font-size: 13px; /* Justera textstorleken för små skärmar */
+    }
+
+    .footer-h4 {
+        font-size: 15px;
+    }
+
+    .footer-bottom p {
+        font-size: 12px; /* Små storlekar för små mobiler */
+    }
+
+    .icon a {
+        font-size: 20px; /* Minska storleken på ikonerna för mobil */
+    }
+
+    .footer-right {
+        padding: 10px;
+    }
+}
