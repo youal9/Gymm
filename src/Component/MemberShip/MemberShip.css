@@ -1,5 +1,5 @@
 .membership{
-    background-image: url("../../assets/member.jpeg"); /* Ange sökvägen till din bakgrundsbild */
+    background-image: url("../../assets/gymw.avif"); /* Ange sökvägen till din bakgrundsbild */
     background-size: cover; /* Täck hela container */
     background-position: center; /* Centrerar bilden */
     background-repeat: no-repeat; /* Förhindrar upprepning av bilden */
@@ -13,7 +13,7 @@
     font-size: 45px;
   }
   .prisnamn{
-      color: black;
+      color: rgb(16, 16, 16);
   }
   .container{
     display: grid;
@@ -25,7 +25,7 @@
   }
   .card{
        border: 3px solid rgb(216, 144, 9);
-       background-color: rgba(0, 0, 0, 0.283);
+       background-color: rgb(206, 202, 202);
       padding: 30px 10px;
       border-radius: 8px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.96);
@@ -49,7 +49,7 @@
     }
   .prisnamn{
       
-      color: rgb(46, 45, 45);
+      color: rgb(0, 0, 0);
       padding: 2rem 0;
   }
   .membership-button {
