@@ -1,71 +1,82 @@
 import React from 'react';
 import './About.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDumbbell, faPersonSwimming, faHandHoldingMedical } from '@fortawesome/free-solid-svg-icons';
-import bild from "../../assets/fit.png";
-import { motion } from 'framer-motion'; // Importera Framer Motion
+import pov from '../../assets/gymm.webp';
+import car from '../../assets/BAGS.jpg';
+import { motion } from 'framer-motion'; 
 
-const About = () => {
+function About() {
+    
   return (
-    <div className="about">
-      <section className="hero">
+    <div className='oss' id="about">
         <motion.div 
-          className="about-img"
-          initial={{ y: 100, opacity: 0 }}  // Starta utanför skärmen (nedanför) och med opacity 0
-          whileInView={{ y: 0, opacity: 1 }} // När den är synlig: flytta till ursprunglig position och öka opacity
-          transition={{ duration: 1.2, ease: 'easeOut' }} // Tidsinställning och easing för animationen
-          viewport={{ once: true }} // Kör bara animationen en gång när den kommer i sikte
-        >
-          <img src={bild} alt="Gym" />
+           initial={{ x: -100, opacity: 0 }}  // Startposition: 100px till vänster och osynlig
+           whileInView={{ x: 0, opacity: 1 }} // När synlig: flytta till sin riktiga position och synlig
+          transition={{ duration: 1.2, ease: 'easeOut' }} 
+           viewport={{ once: true }} // Kör animationen bara en gång
+        >  
+              <h1>Om oss</h1>
         </motion.div>
 
-        <motion.div 
-          className="about-tex"
-          initial={{ y: 50, opacity: 0 }} // Starta utanför skärmen (nedanför) och med opacity 0
-          whileInView={{ y: 0, opacity: 1 }} // När den är synlig: flytta till ursprunglig position och öka opacity
-          transition={{ duration: 1.2, ease: 'easeOut', delay: 0.8 }} // Lägg till lite fördröjning så texten kommer efter bilden
-          viewport={{ once: true }} // Kör bara animationen en gång
-        >
-          <h1 className="h2-text">Vad vi Erbjuder</h1>
-          <div className="about-grid">
-            <div className="about-card">
-              <span><FontAwesomeIcon icon={faDumbbell} /></span>
-              <div>
-                <h3 className='card-h3'>Vår Träning</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget blandit lacus.
-                  Integer mattis sed est non fringilla. Etiam eget pulvinar lacus. Suspendisse potenti.
-                  Suspendisse a lobortis lorem. Quisque vulputate gravida metus quis
-                </p>
-              </div>
+        
+        
+        <div className="oss-content"> 
+            <div className="content">
+              <motion.div 
+                  initial={{ x: -80, opacity: 0 }}  // Startposition: 100px till vänster och osynlig
+                  whileInView={{ x: 0, opacity: 1 }} // När synlig: flytta till sin riktiga position och synlig
+                  transition={{ duration: 1.5, ease: 'easeOut' }} 
+                  viewport={{ once: true }} // Kör animationen bara en gång
+                >  
+
+                <img src={pov} alt="Nordic Driving Academy" />
+                </motion.div>
             </div>
-            <div className="about-card">
-              <span><FontAwesomeIcon icon={faPersonSwimming} /></span>
-              <div>
-                <h3 className='card-h3'>Simmning</h3>
+            <div className="oss-container">
+              <motion.div 
+                initial={{ x: 80, opacity: 0 }}  // Startposition: 100px till vänster och osynlig
+                 whileInView={{ x: 0, opacity: 1 }} // När synlig: flytta till sin riktiga position och synlig
+                 transition={{ duration: 2.5, ease: 'easeOut' }} 
+                 viewport={{ once: true }} // Kör animationen bara en gång
+                >
+                <h3>Invasion Fitness</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget blandit lacus.
-                  Integer mattis sed est non fringilla. Etiam eget pulvinar lacus. Suspendisse potenti.
-                  Suspendisse a lobortis lorem. Quisque vulputate gravida metus quis
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod id tellus sed scelerisque. 
+                    Quisque iaculis malesuada blandit. Ut nec diam commodo, molestie purus gravida, maximus erat. 
+                    Aenean id nunc at lorem malesuada gravida a et mauris. Sed id augue ultrices, dignissim magna ut, 
+                    sollicitudin ipsum.
                 </p>
-              </div>
+                </motion.div>
             </div>
-            <div className="about-card">
-              <span><FontAwesomeIcon icon={faHandHoldingMedical} /></span>
-              <div>
-                <h3 className='card-h3'>Sjukvård</h3>
+            <div className="oss-container">
+            <motion.div 
+                initial={{ x: -80, opacity: 0 }}  // Startposition: 100px till vänster och osynlig
+                 whileInView={{ x: 0, opacity: 1 }} // När synlig: flytta till sin riktiga position och synlig
+                 transition={{ duration: 2.5, ease: 'easeOut' }} 
+                 viewport={{ once: true }} // Kör animationen bara en gång
+                >
+                <h3>LÅT PT PLANERA DIN TRÄNING</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget blandit lacus.
-                  Integer mattis sed est non fringilla. Etiam eget pulvinar lacus. Suspendisse potenti.
-                  Suspendisse a lobortis lorem. Quisque vulputate gravida metus quis
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod id tellus sed scelerisque. 
+                    Quisque iaculis malesuada blandit. Ut nec diam commodo, molestie purus gravida, maximus erat. 
+                    Aenean id nunc at lorem malesuada gravida a et mauris. Sed id augue ultrices, dignissim magna ut, 
+                    sollicitudin ipsum.
                 </p>
-              </div>
+                </motion.div>
             </div>
-          </div>
-        </motion.div>
-      </section>
+            <div className="content">
+            <motion.div 
+                initial={{ x: 80, opacity: 0 }}  // Startposition: 100px till vänster och osynlig
+                 whileInView={{ x: 0, opacity: 1 }} // När synlig: flytta till sin riktiga position och synlig
+                 transition={{ duration: 2.5, ease: 'easeOut' }} 
+                 viewport={{ once: true }} // Kör animationen bara en gång
+                >
+                <img src={car} alt="Nordic Driving Academy" />
+                </motion.div>
+            </div>
+            
+        </div>
     </div>
   );
-};
+}
 
 export default About;
