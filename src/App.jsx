@@ -8,6 +8,7 @@ import Membership from './Component/MemberShip/MemberShip';
 import Home from './Component/Home/Home';
 import PersonalTrainer from './Component/PersonalTrainer/PersonalTrainer';
 import Footer from './Component/Footer/Footer';
+import Carousel from './Carousel/Carousel';
 
 
 export function App() {
@@ -17,6 +18,7 @@ export function App() {
       <Home/>
       
       <About /> 
+      <Carousel/>
       <Membership /> 
       <PersonalTrainer/>
      <Footer/>
