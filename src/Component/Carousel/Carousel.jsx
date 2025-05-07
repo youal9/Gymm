@@ -1,13 +1,13 @@
 import React, { useRef } from 'react';
 import './Carousel.css';
 
-import img1 from '../assets/gym1.webp';
-import img2 from '../assets/gym2.jpg';
-import img3 from '../assets/gym3.jpg';
-import img4 from '../assets/gym4.jpg';
-import img5 from '../assets/gym5.jpg';
-import img6 from '../assets/gym6.webp';
-import img7 from '../assets/gym7.webp';
+import img1 from '../../assets/gym1.webp';
+import img2 from '../../assets/gym2.jpg';
+import img3 from '../../assets/gym3.jpg';
+import img4 from '../../assets/gym4.jpg';
+import img5 from '../../assets/gym5.jpg';
+import img6 from '../../assets/gym6.webp';
+import img7 from '../../assets/gym7.webp';
 
 const images = [img7, img1, img2, img3, img4, img5, img6];
 
