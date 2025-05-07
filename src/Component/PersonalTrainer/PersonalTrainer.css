@@ -27,11 +27,11 @@
 }
 .trainer-card{ 
     display: flex;
-    border-radius: 60px;
+    width: 330px;
     flex-direction: column;
     align-items: center; /* Horisontellt centrerad */
     padding: 1rem;
-    background-color: rgba(0, 0, 0, 0.708);
+    background-color: rgba(8, 8, 8, 0.839);
     height: 440px;
     transition: all 0.3s ease;
 }
@@ -40,8 +40,8 @@
 }
 .trainer-card img{
     margin-bottom: 1rem;
-   width: 200px;
-   border-radius: 50%;
+   width: 300px;
+  
    
 }
 .trainer-card h4{
@@ -87,8 +87,8 @@
     }
     .trainer-card img{
         
-       width: 150px;
-       border-radius: 50%;
+       width: 230px;
+       
        
     }
 }
