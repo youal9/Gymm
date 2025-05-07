@@ -42,7 +42,7 @@
 }
 
 .icon a:hover {
-    color: red;
+    color: rgb(134, 117, 8);
     transform: scale(1.5); /* Effekt för ikon vid hover */
 }
 
