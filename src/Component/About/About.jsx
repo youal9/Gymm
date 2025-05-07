@@ -28,7 +28,7 @@ function About() {
                   viewport={{ once: true }} // Kör animationen bara en gång
                 >  
 
-                <img src={pov} alt="Nordic Driving Academy" />
+                <img src={pov} alt="Nordic Driving Academy" className='img-one' />
                 </motion.div>
             </div>
             <div className="oss-container">
@@ -54,8 +54,8 @@ function About() {
                  transition={{ duration: 2.5, ease: 'easeOut' }} 
                  viewport={{ once: true }} // Kör animationen bara en gång
                 >
-                <h3>LÅT PT PLANERA DIN TRÄNING</h3>
-                <p>
+                <h3 className='oss-hp'>LÅT PT PLANERA DIN TRÄNING</h3>
+                <p className='oss-hp'>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod id tellus sed scelerisque. 
                     Quisque iaculis malesuada blandit. Ut nec diam commodo, molestie purus gravida, maximus erat. 
                     Aenean id nunc at lorem malesuada gravida a et mauris. Sed id augue ultrices, dignissim magna ut, 
@@ -70,7 +70,7 @@ function About() {
                  transition={{ duration: 2.5, ease: 'easeOut' }} 
                  viewport={{ once: true }} // Kör animationen bara en gång
                 >
-                <img src={car} alt="Nordic Driving Academy" />
+                <img src={car} alt="Nordic Driving Academy" className='img-two' />
                 </motion.div>
             </div>
             

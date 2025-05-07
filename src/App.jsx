@@ -8,7 +8,7 @@ import Membership from './Component/MemberShip/MemberShip';
 import Home from './Component/Home/Home';
 import PersonalTrainer from './Component/PersonalTrainer/PersonalTrainer';
 import Footer from './Component/Footer/Footer';
-import Carousel from './Carousel/Carousel';
+import Carousel from './Component/Carousel/Carousel';
 
 
 export function App() {
