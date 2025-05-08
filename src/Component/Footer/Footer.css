@@ -1,7 +1,7 @@
 /* Grundlayout för Footer */
 .footer {
     width: 100%;
-    background-color: rgba(10, 10, 10, 0.841);
+    background-color: rgb(10, 10, 10);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Auto-fit för kolumner */
     padding: 90px 20px;

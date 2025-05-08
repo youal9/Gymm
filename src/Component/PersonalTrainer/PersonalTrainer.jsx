@@ -28,8 +28,11 @@ const PersonalTrainer = () => {
         {trainer.map((trainer) => (
           <div key={trainer.id} className="trainer-card">
             <img src={trainer.image} alt={trainer.name} />
-            <h4>{trainer.name}</h4>
+            <div className="cc">
+               <h4>{trainer.name}</h4>
             <p>{trainer.role}</p>
+            
+           
             <div className="trainer-social">
               <a href={trainer.socials.instagram} target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faInstagram} />
@@ -40,6 +43,7 @@ const PersonalTrainer = () => {
               <a href={trainer.socials.twitter} target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faTwitter} />
               </a>
+            </div>
             </div>
           </div>
         ))}
