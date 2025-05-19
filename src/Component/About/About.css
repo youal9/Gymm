@@ -41,6 +41,7 @@
 }
 
 .oss-container p {
+    color: rgba(36, 36, 36, 0.9);
     font-size: 1rem;
     line-height: 1.5;
 }
